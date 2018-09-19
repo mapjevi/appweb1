@@ -1,0 +1,1 @@
+######Jenkinsfile for automated stages###########

@@ -12,20 +12,5 @@ pipeline {
             }
           }
         }
-        stage('CreateProject') {
-            steps {
-                sh "echo create"
-            }
-        }
-        stage('Test') {
-            steps {
-                sh "echo stage Test"
-            }
-        }
-        stage('Deploy') {
-            steps {
-                sh "echo stage deploy"
-            }
-        }
     }
 }

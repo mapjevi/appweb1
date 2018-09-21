@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('CreateProject') {
             steps {
-                sh "echo stage build"
+                sh " oc new-project pipelineproject"
             }
         }
         stage('Test') {

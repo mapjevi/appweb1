@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('CreateProject') {
             steps {
+                sh " oc login"
                 sh " oc new-project pipelineproject"
             }
         }

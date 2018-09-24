@@ -6,7 +6,7 @@ pipeline {
             script {
               openshift.withCluster() {
                 openshift.withProject("test-cicd") {
-                  def app = openshift.newApp("rails-postgresql-example:lastest")
+                  def app = openshift.newApp("rails-postgresql-example:latest")
                   app.narrow("svc").expose();
                 }
               }

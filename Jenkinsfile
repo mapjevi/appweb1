@@ -7,7 +7,7 @@ pipeline {
           steps {
             script {
               openshift.withCluster() {
-		def project = openshift.NewProject("testprojectcicd") 
+		def project = openshift.NewProject("ticforum2018") 
               }
             }
           }

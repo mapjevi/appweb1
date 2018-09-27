@@ -3,12 +3,15 @@
 <head>
 </head>
 <body style="background-color:#F9F8F8;">
-<h1 align=center > Deploy 4 </h1>
+<div align=center>
+<h1> Deploy 4 </h1>
 
-<img src="ticforum.png" align="center">
+<img src="ticforum.png">
+</div>
+<div>
 <?php
 phpinfo();
 ?>
-
+</div>
 </body>
 </html>

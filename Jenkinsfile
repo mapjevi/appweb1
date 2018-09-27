@@ -12,6 +12,9 @@ pipeline {
                   if (!app1) {
                            def app = openshift.newApp("https://github.com/giondo/appweb1.git","httpd")
                            app.narrow("svc").expose();
+		           def dc = app.object()
+                  	   echo "new-app created a ${dc.kind} with name ${dc.metadata.name}"
+                  	   echo "The object has labels: ${dc.metadata.labels}"
                       } else {
 			   def buildSelector = app1.startBuild()
 			   buildSelector.logs('-f')
@@ -24,12 +27,12 @@ pipeline {
                   ///// def app = openshift.newApp("sso72-https")
                   //app.narrow("svc").expose();
                   
-		  def dc = app.object()
+		  ///def dc = app.object()
                   // dc is not a Selector -- It is a Groovy Map which models the content of the DC
                   // new-app created at the time object() was called. Changes to the model are not
                   // reflected back to the API server, but the DC's content is at our fingertips.
-                  echo "new-app created a ${dc.kind} with name ${dc.metadata.name}"
-                  echo "The object has labels: ${dc.metadata.labels}"
+                  ///echo "new-app created a ${dc.kind} with name ${dc.metadata.name}"
+                  ///echo "The object has labels: ${dc.metadata.labels}"
                 }
               }
             }

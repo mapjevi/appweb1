@@ -8,7 +8,7 @@ pipeline {
               openshift.withCluster() {
                 openshift.withProject("ticforum2018-html") {
 		  def app1 = openshift.selector( "bc", "appweb1")
-		  def app1Exists = app2.exists()
+		  def app1Exists = app1.exists()
                   if (!app1Exists) {
 
                            def created = openshift.newApp("https://github.com/giondo/appweb1.git","httpd")

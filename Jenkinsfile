@@ -6,7 +6,7 @@ pipeline {
           steps {
             script {
               openshift.withCluster() {
-                openshift.withProject("ticforum2018") {
+                openshift.withProject("ticforum2018.html") {
 		  def app1 = openshift.selector( "bc", "appweb1")
 
                   if (!app1) {

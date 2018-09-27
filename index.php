@@ -18,9 +18,9 @@ if(preg_match_all('#(?:<h2>(?:<a name=".*?">)?(.*?)(?:</a>)?</h2>)|(?:<tr(?: cla
 </head>
 <body style="background-color:#F9F8F8;">
 <div align=center>
+<img src="ticforum.png">
 <h1> Deploy 4 </h1>
 
-<img src="ticforum.png">
 </div>
 
 <?php

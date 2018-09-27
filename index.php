@@ -8,10 +8,8 @@
 
 <img src="ticforum.png">
 </div>
-<div>
+</body>
 <?php
 phpinfo();
 ?>
-</div>
-</body>
 </html>

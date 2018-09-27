@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title> Demo Deploy </title>
 </head>
 <body style="background-color:#F9F8F8;">
 <div align=center>
